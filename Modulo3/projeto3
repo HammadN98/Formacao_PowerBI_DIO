@@ -1,0 +1,67 @@
+Descrição do desafio módulo 3 – Processamento de Dados Simplificado com Power BI
+Criação de uma instância na Azure para MySQL 
+Criar o Banco de dados com base disponível no github
+Integração do Power BI com MySQL no Azure 
+Verificar problemas na base a fim de realizar a transformação dos dados
+  OBS: O projeto foi realizado apenas utilizando o MySQL local, por motivos de já ter usado minha fase gratuita do Azure.
+Diretrizes para transformação dos dados
+Verifique os cabeçalhos e tipos de dados
+  Cabeçalhos verificados: Todos OK
+  Tipos de dados: OK
+  Alterações:
+   Departament.Dnumber inteiro -> Texto. Por apenas representar uma chave
+  Dependent.Sex F-> Female| M-> Male
+  Employee.Sex F-> Female| M-> Male
+  Employee.Dno: Inteiro para Texto. Por apenas representar uma chave
+  project.Dnum: Inteiro para Texto. Por apenas representar uma chave
+Modifique os valores monetários para o tipo double preciso
+  Coluna “Salary” da tabela “employee” modificada para valor monetário. 
+Verifique a existência dos nulos e analise a remoção
+  Sem dados nulos, com exceção da coluna “Super_ssn”, onde isso representa que o colaborador em questão é gerente. 
+Os employees com nulos em Super_ssn podem ser os gerentes. Verifique se há algum colaborador sem gerente
+  Colaborador “James Borg”  tem esse campo “NULL” devido ao fato de o mesmo ser gerente. Afinal temos o “ssn” de como valor de “Super_ssn” de outros colaboradores.
+Verifique se há algum departamento sem gerente
+  Não há nenhum departamento sem gerente. 
+Se houver departamento sem gerente, suponha que você possui os dados e preencha as lacunas
+  Não existem.
+Verifique o número de horas dos projetos
+  Projeto de reorganização em houston possui um total de zero horas trabalhados 
+Separar colunas complexas
+  Divisao da coluna address em: House number, Road, City, State
+Mesclar consultas employee e departament para criar uma tabela employee com o nome dos departamentos associados aos colaboradores. A mescla terá como base a tabela employee. Fique atento, essa informação influencia no tipo de junção
+N  este processo elimine as colunas desnecessárias. 
+Realize a junção dos colaboradores e respectivos nomes dos gerentes . Isso pode ser feito com consulta SQL ou pela mescla de tabelas com Power BI. Caso utilize SQL, especifique no README a query utilizada no processo.
+  TabelaGerentes = 
+      SELECTCOLUMNS(
+          employees,
+          "Super_ssn", employees[Super_ssn],
+          "Dnumber", employees[Dnumber]
+      )
+  
+  
+  TabelaGerentesComNome = 
+      ADDCOLUMNS(
+          TabelaGerentes,
+          "NomeGerente", RELATEDTABLE(employees)
+      )
+  
+  
+
+
+Mescle as colunas de Nome e Sobrenome para ter apenas uma coluna definindo os nomes dos colaboradores
+  Mesclado utilizando “merge columns”
+Mescle os nomes de departamentos e localização. Isso fará que cada combinação departamento-local seja único. Isso irá auxiliar na criação do modelo estrela em um módulo futuro.
+Ao realizar o Merge foi criada a coluna Departament Local. E da tabela Department, foram excluídas as colunas: Dnumber e Mgr_ssn
+Explique por que, neste caso supracitado, podemos apenas utilizar o mesclar e não o atribuir.  
+  Devido ao fato de estarem em tabelas diferentes
+
+Agrupe os dados a fim de saber quantos colaboradores existem por gerente
+  TabelaGerentes = 
+  SUMMARIZE(
+      employees,
+      employees[Super_ssn],
+      "NomeGerente", RELATED(employees[Nome completo]),
+      "QuantidadeColaboradores", COUNTROWS(employees)
+  )
+
+Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela
