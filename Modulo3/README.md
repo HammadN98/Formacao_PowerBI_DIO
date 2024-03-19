@@ -7,4 +7,4 @@
 
 ## Projeto Prático
 
-- Processando e Transformando daDOS COM power bi
+- Processando e Transformando Dados com Power BI
