@@ -1,14 +1,14 @@
-# Visualisacao de Dados e Relatorios com Power BI
+# Visualização de Dados e Relatórios com Power BI
 
 ## Cursos
 
   - Trabalhando com visuais no Power BI
-  - Fundamentos de BI: KPIs e Metricas
+  - Fundamentos de BI: KPIs e Métricas
   - Criando Dashboard interativos com POwer BI
 
-## Projeto Pratico
+## Projeto Prático
 
- - Crimando um relatorio de vendas eleganete com Poweer bBI
+ - Criando um relatório de vendas elegante com Power BI
 
       Descrição do desafio: Você irá criar um relatório mais elaborado com base na sample financials do Power BI. Os arquivos de dados estão disponíveis no github: 
         
@@ -44,6 +44,5 @@
         
       Caso você tenha familiaridade fique livre para utilizar outros artifícios nos botões e outros 
         
-      Submenta seu projeto através do link no github 
-        
-         
+      Submeta seu projeto através do link no github 
+
