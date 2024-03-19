@@ -47,7 +47,9 @@
 
       Utilizaremos a tabela única de Financial Sample para criar as tabelas dimensão e fato do nosso modelo baseado em star schema.
       
-      O processo consiste na criação das tabelas com base na tabela original. A partir da cópia serão selecionadas as colunas que irão compor a visão da nova tabela. Sendo assim, a partir da tabela principal serão criadas as tabelas:
+      O processo consiste na criação das tabelas com base na tabela original.
+      A partir da cópia serão selecionadas as colunas que irão compor a visão da nova tabela.
+      Sendo assim, a partir da tabela principal serão criadas as tabelas:
       
       Financials_origem (modo oculto – backup)
       
