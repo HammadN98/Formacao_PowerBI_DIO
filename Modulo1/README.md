@@ -1,15 +1,15 @@
-# Fundamentos de Analise de Dados e BI
+# Fundamentos de Análise de Dados e BI
 
-## - Fundamentos de Business Inteligence
-## - Introducao a analise de aados com SQL
-## - Fundamentos teoricos sobre ETL
-## - Primeiros passoa com Power BI
-## - Projeto: Analisando dados com meui primeiro projeto no power BI
+## - Fundamentos de Business Intelligence
+## - Introdução à análise de dados com SQL
+## - Fundamentos teóricos sobre ETL
+## - Primeiros passos com Power BI
+## - Projeto: Analisando dados com meu primeiro projeto no power BI
 
 Projeto:
 
 Instruções para entrega
-Descrição do desafio: Vamos para o primeiro desafio com Power BI? Neste projeto você irá replicar duas páginas já criadas durante o curso com a sample disponibilizada. Acesse o link do Gihub para ter acesso aos dados: 
+Descrição do desafio: Vamos para o primeiro desafio com Power BI? Neste projeto você irá replicar duas páginas já criadas durante o curso com a sample disponibilizada. Acesse o link do Github para ter acesso aos dados: 
 
 https://github.com/julianazanelatto/power_bi_analyst 
 
@@ -38,3 +38,5 @@ Publique o relatório
 Compartilhe como suplemento no Power Point 
 
 Caso não tenha Power Point, salve o projeto de Power BI  
+
+
