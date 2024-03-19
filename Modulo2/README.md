@@ -6,9 +6,9 @@
   - Fundamentos de BI: KPIs e Metricas
   - Criando Dashboard interativos com POwer BI
 
-### Projeto Pratico
+## Projeto Pratico
 
-  - Crimando um relatorio de vendas eleganete com Poweer bBI
+### - Crimando um relatorio de vendas eleganete com Poweer bBI
 
       Descrição do desafio: Você irá criar um relatório mais elaborado com base na sample financials do Power BI. Os arquivos de dados estão disponíveis no github: 
         
