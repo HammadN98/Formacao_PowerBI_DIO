@@ -6,7 +6,7 @@
   - Fundamentos de BI: KPIs e Metricas
   - Criando Dashboard interativos com POwer BI
 
-## Projeto Pratico
+### Projeto Pratico
 
   - Crimando um relatorio de vendas eleganete com Poweer bBI
 
