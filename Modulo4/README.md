@@ -9,7 +9,7 @@
 
   ## Projeto Pratico
 
-  -### Criando um Star Schema para um cenario de univesidade com Power BI
+  ### - Criando um Star Schema para um cenario de univesidade com Power BI
  
     Descrição do desafio de modelagem dimensional
 
