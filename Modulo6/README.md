@@ -17,7 +17,12 @@
 
 - Criando Relatórios Dinâmicos com o uso de Parâmetros no Power BI
 
-- ![Tela Inicial](https://github.com/HammadN98/Formacao_PowerBI_DIO/blob/main/Modulo6/RelatorioDinamico0.PNG)
+  ![Tela Inicial](https://github.com/HammadN98/Formacao_PowerBI_DIO/blob/main/Modulo6/RelatorioDinamico0.PNG)
+  ![Tela Inicial](https://github.com/HammadN98/Formacao_PowerBI_DIO/blob/main/Modulo6/RelatorioDinamico1.PNG)
+  ![Tela Inicial](https://github.com/HammadN98/Formacao_PowerBI_DIO/blob/main/Modulo6/RelatorioDinamico2.PNG)
+  ![Tela Inicial](https://github.com/HammadN98/Formacao_PowerBI_DIO/blob/main/Modulo6/RelatorioDinamico3.PNG)
+  
+  
 
 
 
